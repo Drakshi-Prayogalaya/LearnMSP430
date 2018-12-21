@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.grape.learnmsp.activity.MessagesFragment">
+
+    <TextView
+        android:layout_below="@id/label"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="GRAPE is an undertaking of a group of\n entrepreneurs aimed at developing \neducational tools for students.\n\nGRAPE also conducts workshops on\n various open source tools and\n embedded platforms." />
+
+</RelativeLayout>

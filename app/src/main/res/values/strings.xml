@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Learn MSP 430</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Programs</string>
+    <string name="nav_item_notifications">About Us</string>
+    <string name="nav_item_facebook">Like Us On Facebook</string>
+    <string name="nav_item_share">Share This App</string>
+    <string name="nav_item_more_apps">More Apps By Grape</string>
+    <string name="nav_item_rate_this_app">Rate This App</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>@string/nav_item_facebook</item>
+        <item>@string/nav_item_share</item>
+        <item>@string/nav_item_more_apps</item>
+        <item>@string/nav_item_rate_this_app</item>
+    </string-array>
+
+    <string name="title_about_us">About Us</string>
+    <string name="title_programs">Programs</string>
+    <string name="title_home">Home</string>
+    <string name="title_facebook">Like Us On Facebook</string>
+    <string name="title_share">Share This App</string>
+    <string name="title_more_apps">More Apps By Grape</string>
+    <string name="title_rate_this_app">Rate This App</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

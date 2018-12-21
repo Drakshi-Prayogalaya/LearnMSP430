@@ -1,0 +1,633 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.grape.basic8086.activity.FriendsFragment">
+    
+   <!-- <TextView
+        android:layout_below="@id/label"
+        android:layout_centerInParent="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Edit fragment_friends.xml to change the appearance" />-->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="8dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  
+                android:text="Software Toggle P1.0"
+                 />
+
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                 
+                android:text="ADC12, Sample A0, Set P1.0 if A0 > 0.5*AVcc" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                   
+                android:layout_height="wrap_content"   
+                android:text="ADC12, Using the Internal Reference" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                   
+                android:layout_height="wrap_content"   
+                android:text="ADC12, Using an External Reference" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button5"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="ADC12, Repeated Sequence of Conversions" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button6"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="ADC12, Repeated Single Channel Conversions" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button7"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="ADC12, Sequence of Conversions (non-repeated)" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button8"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="ADC12, Sample A10 Temp and Convert to oC and oF" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button9"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="DMA0, Repeated Block to-from RAM, Software Trigger" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button10"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="DMA0, Single Transfer in Block Mode UART1 9600, ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button11"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="SPI TX and RX using DMA0 and DMA1 Single Transfer in Fixed Address Mode" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button12"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="DMA0, Single transfer using ADC12 triggered by TimerB" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button13"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Single-Byte Flash In-System Programming, Copy SegC to SegD" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button14"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Flash In-System Programming w/ Long-Word write at 0x1800" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button15"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Enters LPM3 (ACLK = LFXT1)" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button16"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Enters LPM3 (ACLK = VLO)" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button17"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Enters LPM4;  LFXT1, REF0 disabled, SVS disabled" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button18"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="16x16 Unsigned Multiply" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button19"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="32x32 Signed Multiply" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button20"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="32x32 Signed Multiply Accumalate" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button21"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="32x32 Unsigned Multiply Accumalate" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button22"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Saturation mode overflow test" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button23"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Saturation mode underflow test" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button24"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Fractional mode, Q15 multiplication" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button25"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="8x8 Unsigned Multiply" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button26"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="16x16 Signed Multiply" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button27"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="8x8 Signed Multiply" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button28"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="16x16 Unsigned Multiply Accumulate" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button29"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="8x8 Unsigned Multiply Accumulate" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button30"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="16x16 Signed Multiply Accumulate" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button31"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="8x8 Signed Multiply Accumulate" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button32"  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"   
+                android:text="32x32 Unsigned Multiply"
+                 
+                />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button33"  
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                android:text="LFXT1 Oscillator Fault Detection" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button34"  
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                android:text="Software Poll P1.4, Set P1.0 if P1.4 = 1" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button35"  
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                android:text="Software Port Interrupt Service on P1.4 from LPM4 with Internal Pull-up Resistance Enabled" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  
+                android:text="Write a byte to Port 1"
+                 />
+
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button37"
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                 
+                android:text="Write a Word to Port A (Port1+Port2)" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button38"
+                android:layout_width="match_parent"
+                   
+                android:layout_height="wrap_content"   
+                android:text="RTC in Counter Mode toggles P1.0 every 1s" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button39"
+                android:layout_width="match_parent"
+                   
+                android:layout_height="wrap_content"   
+                android:text="RTC_A in real time clock mode" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button40"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P1.0, CCR0 Cont. Mode ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button41"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P1.0, CCR0 Up Mode ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button42"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P1.0, Overflow ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button43"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P1.0, Overflow ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button44"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P1.0, CCR0 Up Mode ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button45"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P1.0;P2.1-3, Cont. Mode ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button46"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P2.1/TA1.0, Up Mode, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button47"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P2.1/TA1.0, Up/Down Mode, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button48"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, Toggle P2.1/TA1.0, Up/Down Mode, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button49"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, PWM TA1.1-2, Up Mode, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button50"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, PWM TA1.1-2, Up Mode, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button51"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, PWM TA1.1-2, Up/Down Mode, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button52"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_A3, PWM TA1.1-2, Up/Down Mode, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button53"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_B, Toggle P1.0, CCR0 Cont. Mode ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button54"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_B, Toggle P1.0, CCR0 Up Mode ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button55"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_B, Toggle P1.0, Overflow ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button56"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_B, Toggle P1.0, Overflow ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button57"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_B, Toggle P1.0, CCR0 Up Mode ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button58"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Timer_B, PWM TB1-6, Up Mode, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button59"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Software Toggle P1.0 at Default DCO" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button60"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Software Toggle P1.0 with 8MHz DCO" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button61"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Software Toggle P1.0 with 12MHz DCO" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button62"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="FLL+, Runs Internal DCO at 2.45MHz with LFXT1 as Ref" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button63"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="VLO sources ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button64"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="XT1 sources ACLK. Toggles P1.0" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button65"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="FLL+, Output 32kHz Xtal + HF Xtal + Internal DCO" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button66"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="XT2 sources MCLK and SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button67"  
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"   
+                android:text="LFXT1 HF Xtal + Internal DCO"
+                 
+                />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button68"  
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                android:text="USCI_A0, UART 9600 Full-Duplex Transceiver, 32K ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button69"  
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                android:text="USCI_A0, SPI 3-Wire Master Incremented Data" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button70"  
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                android:text="USCI_A0, SPI 3-Wire Slave Data Echo" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  
+                android:text="USCI_A0, 115200 UART Echo ISR, DCO SMCLK"
+                 />
+
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button72"
+                android:layout_width="match_parent"
+                 
+                android:layout_height="wrap_content"   
+                 
+                android:text="USCI_A0, Ultra-Low Pwr UART 2400 Echo ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button73"
+                android:layout_width="match_parent"
+                   
+                android:layout_height="wrap_content"   
+                android:text="USCI_A0, Ultra-Low Pwr UART 9600 Echo ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button74"
+                android:layout_width="match_parent"
+                   
+                android:layout_height="wrap_content"   
+                android:text="USCI_A0, 9600 UART, SMCLK, LPM0, Echo with over-sampling" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button75"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Master RX single bytes from MSP430 Master" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button76"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Slave TX single bytes to MSP430 Slave" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button77"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Master TX single bytes to MSP430 Slave" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button78"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Slave RX single bytes from MSP430 Master" />
+
+
+
+
+
+
+
+
+
+
+
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button79"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Master TX multiple bytes to MSP430 Slave" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button80"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text=" USCI_B0 I2C Slave RX multiple bytes from MSP430 Master" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button81"  
+                android:layout_width="match_parent" 
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Master RX multiple bytes from MSP430 Slave" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button82"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI_B0 I2C Slave TX multiple bytes to MSP430 Master" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button83"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI B0 I2C Master TX/RX multiple bytes to/from MSP430 Slave Repeated Start" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button84"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="USCI B0 I2C Slave RX/TX multiple bytes from/to MSP430 Master Repeated Start" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button85"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="WDT, Toggle P1.0, Interval Overflow ISR, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button86"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="WDT, Toggle P1.0, Interval Overflow ISR, 32kHz ACLK" />
+
+            <Button        android:layout_marginBottom="4dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button87"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="WDT+ Failsafe Clock, WDT mode, DCO SMCLK" />
+
+            <Button        android:layout_marginBottom="8dp"                 android:layout_marginRight="10dp"                 android:layout_marginLeft="10dp"                 android:layout_marginTop="4dp"                 android:background="#F44336"                 android:textColor="#FFFFFF"
+                android:id="@+id/button88"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"   
+                android:text="Reset on Invalid Address fetch, Toggle P1.0" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
